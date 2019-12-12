@@ -1,0 +1,46 @@
+import demo.*;
+import java.util.*;
+
+public class PrimeNumber instantiates BranchInstrumentor {
+	
+    public PrimeNumber(){}
+
+    public int checkPrimeNumber(int a) {
+        if (a <= 1) {
+            return 1;
+        } else {
+
+            for (int i = 2; i <= Math.sqrt(a); i++) {
+                if (a % i == 0) {
+                    return 1;
+                }
+                 
+            }
+        }
+        return a;
+
+    }
+
+    /**
+     * if A doesn't include prime number, add 1 to listPrimeNumber to avoid, so listPrimeNumber is not null
+     * @param a
+     * @return
+     */
+    public java.util.List createListPrimeNumber( int[] A )
+    {
+        java.util.List listPrimeNumber = new java.util.LinkedList();
+        for (int i = 0; i < A.length; i++) {
+            if (checkPrimeNumber( A[i] ) != 1) {
+                listPrimeNumber.add( i );
+            } 
+        }
+        if (listPrimeNumber.size() != 0) {
+            return listPrimeNumber;
+        } else {
+            return null;
+        }
+    }
+
+
+	
+}

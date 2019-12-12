@@ -1,0 +1,58 @@
+import demo.*;
+import java.util.Random;
+
+
+public class ImprovedRandom instantiates BranchInstrumentor extends Random
+{
+    public static ImprovedRandom ourInstance;
+
+
+    public ImprovedRandom ()
+    {
+        super();
+    }
+    
+    public ImprovedRandom (long theSeed)
+    {
+        super(theSeed);
+    }
+    
+    
+    public static ImprovedRandom getInstance ()
+    {
+	if (null == ourInstance)
+	    ourInstance = new ImprovedRandom();
+	
+	return ourInstance;
+    }
+    
+    public static ImprovedRandom getInstance (long theSeed)
+    {
+	if (null == ourInstance)
+	    ourInstance = new ImprovedRandom(theSeed);
+
+	return ourInstance;
+    }
+    
+    
+    public int nextInt (int theModulus)
+    {
+        int temp = nextInt();
+        if (temp < 0)
+            temp = temp * -1;
+        
+        temp = temp % theModulus;
+        return temp;
+    }
+    
+    public long nextLong (long theModulus)
+    {
+        long temp = nextLong();
+        if (temp < 0)
+            temp = temp * -1;
+        
+        temp = temp % theModulus;
+        return theModulus;
+    }
+}
+        

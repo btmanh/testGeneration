@@ -1,0 +1,23 @@
+import demo.*;
+import java.util.*;
+
+public class GetListPrimeNumber instantiates BranchInstrumentor {
+	
+    public GetListPrimeNumber() {}
+
+    public static void getList(int[] A)
+    {
+        PrimeNumber oj = new PrimeNumber();
+
+        int[] B = new int[oj.createListPrimeNumber(A).size()];
+        /*
+         * some code using B[]
+         */
+        B[0] = 0;
+        System.out.println(B[0]);
+        
+        
+    }
+
+	
+}

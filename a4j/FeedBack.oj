@@ -1,0 +1,60 @@
+import demo.*;
+import java.util.*;
+import java.io.Serializable;
+
+public class FeedBack instantiates BranchInstrumentor implements Serializable  {
+
+    public FeedBack() {
+        super();
+    }
+
+    private String feedbackRating,feedbackComments,feedbackDate,feedbackRater;
+
+    public String getFeedbackRating() {
+        return feedbackRating;
+    }
+
+    public void setFeedbackRating(String feedbackRating) {
+        this.feedbackRating = feedbackRating;
+    }
+
+    public String getFeedbackComments() {
+        return feedbackComments;
+    }
+
+    public void setFeedbackComments(String feedbackComments) {
+        this.feedbackComments = feedbackComments;
+    }
+
+    public String getFeedbackDate() {
+        return feedbackDate;
+    }
+
+    public void setFeedbackDate(String feedbackDate) {
+        this.feedbackDate = feedbackDate;
+    }
+
+    public String getFeedbackRater() {
+        return feedbackRater;
+    }
+
+    public void setFeedbackRater(String feedbackRater) {
+        this.feedbackRater = feedbackRater;
+    }
+
+    public String toString() {
+        StringBuffer output = new StringBuffer();
+
+        output.append("--------------- \n");
+        output.append("Rater = " + this.feedbackRater + "\n");
+        output.append("Rating = " + this.feedbackRating + "\n");
+        output.append("Comments = " + this.feedbackComments + "\n");
+        output.append("Date = " + this.feedbackDate + "\n");
+        output.append("--------------- \n");
+
+        return output.toString();
+    }
+
+
+	
+}

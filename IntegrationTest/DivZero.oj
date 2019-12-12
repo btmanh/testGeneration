@@ -1,0 +1,25 @@
+
+import demo.*;
+
+public class DivZero  instantiates BranchInstrumentor {
+
+	/**
+	 * 
+	 */
+	public DivZero() {
+		super();
+	}
+
+	public void divZero(int a) {
+		int b = Math.abs(a) -8;
+		int c = b -2;
+		int d = a - 8;
+		int num = c +b;
+//		error when den =0
+		ErrorZero e = new ErrorZero();
+		int den = e.methodAux(d,b);
+		int result = num/den;
+		System.out.println(result);
+	}
+
+}

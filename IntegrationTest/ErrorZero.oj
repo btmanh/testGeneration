@@ -1,0 +1,19 @@
+import demo.*;
+import java.util.*;
+
+public class ErrorZero instantiates BranchInstrumentor   {
+
+    public ErrorZero(){
+        super();
+    }
+
+    public int methodAux(int x, int y) {
+        if(x>0) {
+            return x+y;
+        }
+        else return 0;
+    }
+
+
+	
+}

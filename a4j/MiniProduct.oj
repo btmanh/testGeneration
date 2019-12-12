@@ -1,0 +1,68 @@
+import demo.*;
+import java.util.*;
+import java.io.Serializable;
+
+public class MiniProduct instantiates BranchInstrumentor implements Serializable  {
+
+    public MiniProduct() {
+        super();
+    }
+
+    String name,manufacturer,price,asin,imageURL,productUrl;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getManufacturer() {
+        return manufacturer;
+    }
+
+    public void setManufacturer(String manufacturer) {
+        this.manufacturer = manufacturer;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
+    }
+
+    public String getAsin() {
+        return asin;
+    }
+
+    public void setAsin(String asin) {
+        this.asin = asin;
+    }
+
+    public String getImageURL() {
+        return imageURL;
+    }
+
+    public void setImageURL(String imageURL) {
+        this.imageURL = imageURL;
+    }
+
+    public String getProductUrl() {
+        return productUrl;
+    }
+
+    public void setProductUrl(String productUrl) {
+        this.productUrl = productUrl;
+    }
+
+    public String toString() {
+        return (asin + " \n " + name + " \n " + manufacturer + " \n " + price + " \n " + imageURL);
+    }
+    
+
+
+	
+}
